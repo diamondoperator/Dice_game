@@ -51,17 +51,18 @@ resetBtn.addEventListener("click", function(){
     reset()
 })
 
+//when rest button clicked reset the game using these variables
 function reset() {
     player1Score = 0
     player2Score = 0
     player1Turn = true
     player1Scoreboard.textContent = 0
     player2Scoreboard.textContent = 0
-    player1Dice.textContent = "-"
-    player2Dice.textContent = "-"
     message.textContent = "Player 1 Turn"
     resetBtn.style.display = "none"
     rollBtn.style.display = "block"
+    player1Dice.textContent = "-"
+    player2Dice.textContent = "-"
     player2Dice.classList.remove("active")
     player1Dice.classList.add("active")
 }
